@@ -34,16 +34,17 @@ app.use('/success', (req, res) => {
 
 //This page is served whenever we don't 
 //really have availiable routes
-app.use('/error', (req, res) => {
-    res.render('error')
+app.use('/404', (req, res) => {
+    res.render('404')
 })
 
 app.use((req, res, next)=>{
     if(req.url == "/"){
         res.redirect('/hello')
-    }else{
-        res.redirect('/error')
+        return
     }
+        res.redirect('/404')
+    
 })
 
 app.listen(3000)

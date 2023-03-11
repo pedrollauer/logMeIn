@@ -4,15 +4,19 @@
 	<meta charset="utf-8">
 	<title>LogMeIn</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="stylesheet/css" href="./style.css"/>
+    <link rel="stylesheet" href="./css/login.css"/>
 </head>
 <body>
     <div id = "login-box">
+        <img src = "./images/undraw_cat.png"/>
+        <h2> Welcome Back</h2>
     <form method = "POST" action = "/hello" id = "login-form">
+        <label>E-mail address</label><br>
     <input name = "mail" placeholder = "Your e-mail address" type = "text"/><br>
+    <label>Password</label><br>
     <input name = "password" placeholder = "Password" type = "password"/><br>
     <button type="submit">Sign In</button><br>
-    <a href = "restore_pass" >Forgot Your Password</a><br>
+    <a class = "login-box__anchor" href = "restore_pass" >Forgot My Password</a><br>
     <a href = "new_user" >Sign Up</a><br>
     </form>
     </div>

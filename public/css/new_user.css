@@ -1,0 +1,46 @@
+#login-box{
+    position
+}
+
+h2, input, button{
+    margin-bottom: 2em;
+}
+
+input{
+    margin-bottom: 1em;
+}
+
+img{
+    background: transparent;
+    width: auto;
+    height: 100px;
+}
+
+#new-user__box{
+    width: 100%;
+    height: 100vh;
+    min-width: 200px;
+    min-heigt: 200px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+
+    #new-user__box{
+        width: 300px;
+        height: 500px;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        padding-top: 0px;
+        margin: auto;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+}

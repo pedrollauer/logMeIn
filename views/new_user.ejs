@@ -1,12 +1,16 @@
 <!doctype html>
-<html lag="en">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>LogMeIn</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="stylesheet/css" href="./style.css"/>
+    <link rel="stylesheet" href="./css/new_user.css"/>
 </head>
 <body>
+    <div id = "new-user__box">
+    <img src = "./images/new_user.png"/>
+    <h1> Welcome new User</h1><br>
+    <h3>Please fill the information bellow so we can create a new account</h3>
     <form method = "POST" action = "/success" id = "new-user__form">
         <label>Enter Name</label><br>
         <input name = "Name" placeholder = "Your Name" type = "text"/><br>
@@ -18,5 +22,6 @@
         <input name = "password" placeholder = "Password" type = "password"/><br>
         <button type="submit">Create Account</button><br>
     </form>
+    </div>
 </body>
 </html>
